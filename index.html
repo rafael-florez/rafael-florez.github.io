@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de2aaadcc6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Portada</a></li>
+                    <li><a href="#about">Mi Perfil</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Entrepreneur</p>
+                <h1>Ahoy! soy <span>Rafael</span><br>pero pueden llamarme Rafo</h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------about----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/yodil-1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Perfil Profesional</h1>
+                    <p>He trabajado en diferentes puestos, en grandes corporaciones y empresas medianas pero mi objetivo ha 
+                        sido siempre el mismo: Conocimiento y Tecnología</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                        <!---<p class="tab-links" onclick="opentab('education')">Educacion</p>---->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span></span><br>Procesar Textos</li>
+                            <li><span></span><br>Transcribir Audio a Texto</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!---li><span></span><br>Soluciones Industriales</li--->
+                            <li><span></span><br>Procesamiento de Documentos</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span></span><br>Procesamiento de Textos</li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------services---------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Sumario de Textos</h2>
+                    <p>Si busca alrededor, hay muchos artículos y libros disponibles. Asumamos que quiere aprender un concepto 
+                        sobre "Resumen de Textos", y si busca en internet, encontrará un artículo. Le gusta el contenido, pero es tan largo para 
+                        leerlo una vez mas. Usted quiere básicamente resumir y guardar el artículo en algún lado de manera que 
+                        pueda leerlo despues. Bien <em>rafael-tek</em> tiene una solución: Resumir el Texto. 
+                        Asi no tendrá que leer el artículo completo cada vez. </p>
+                    <a href="#portfolio">Ver Trabajo</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <h2>Transcripción Voz a Texto</h2>
+                    <p>Las palabras habladas por personas, archivos de audio y video, grabaciones de
+                        reuniones y otros eventos se convierten a texto escrito.</p>
+                    <a href="#portfolio">Ver Trabajo</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Reconocimiento de Caracteres</h2>
+                    <p>Este servicio puede ser usado para extraer datos de texto desde documentos e imagenes. Extraer datos de esos documentos 
+                        es realmente importante ya que contienen información útil para Usted o su Organización. <br>
+                        Cuál es el problema con documentos de papel? Es el costo y tiempo requerido para extraer datos de documentos físicos usando 
+                        métodos tradicionales, uno de los mas comunes es procesar manualmente esos 
+                        documentos. Este enfoque es altamente ineficiente y caro. Automatizando estas actividades minimiza costos e incrementa 
+                        ganancias
+                    </p>
+                    <a href="#portfolio">Ver Trabajo</a>
+                </div>
+
+                <!---div>
+                    <i class="fa-solid fa-book"></i>
+                    <h2>Prediccion de Prestamo</h2>
+                    <p>altament c
+                    </p>
+                    <a href="#portfolio">Ver Trabajo</a>
+                </div--->
+
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------portfolio------------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mi Trabajo</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Sumario "La Isla del Tesoro"</h3>
+                        <p>Obra escrita por Robert Stevenson. En este trabajo se realiza el resumen o sumario de los capitulos I y II. <br>
+                            Si le gustó el trabajo, sientase libre de contactarse</p>
+                        <a href="images/sumario_isla.pdf" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <!--<a href="images/emojicon.pdf" download class="btn btn2" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-up-right-from-square"></i>Descargar Ej. Emoticon</a>-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Transcripcion Voz a Texto</h3>
+                        <p>Convertir voz en texto escrito es muy importante. Presentamos una transcripcion de audio de 
+                            youtube. <br>Si le gustó el trabajo, sientase libre de contactarse</s> </p>
+                        <a href="images/vozatext.pdf" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/perfil-good.png">
+                    <div class="layer">
+                        <h3>Reconocimiento de Caracteres</h3>
+                        <p> Documentos en formato PDF, PNG, JPG se convierten a texto escrito, extrayendo datos que contienen información útil. <br>
+                            Si le gustó el trabajo, sientase libre de contactarse</p>
+                        <a href="images/transc.pdf" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <!---div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Prediccion de Prestamo</h3>
+                        <p> Documentos en formato PDF, PNG, JPG se convierten a texto escrito que tiene informacion util. <br>
+                            Si le gusto el trabajo, sientase libre de contactarse</p>
+                        <a href="images/transc.pdf" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div--->
+
+            </div>
+            <a href="#" class="btn">Ver mas</a>
+        </div>
+
+    </div>
+    <!--------------contact--------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> r-analitik@proton.me</p>
+                    <!--<p><i class="fa-solid fa-square-phone"></i><i class="fa-solid fa-message"></i> +591-########</p>-->
+                    <div class="social-icons">
+                        <a href="http://facebook.com/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://twitter.com" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2" target="_blank" rel="noreferrer noopener">Descargar Résumé</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Su Nombre" required>
+                        <input type="email" name="Email" placeholder="Su Correo Electrónico" required>
+                        <textarea name="Message" rows="6" placeholder="Su Mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                    <span id="msg"></span>
+                </div> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzPgiBh2K3xiDsWI52C2k-OGPjxnYgFZT16MRJOEAYD4dBy_y_x-Mm2W5V7AeXbr1Mi3g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Mensaje enviado exitosamente"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>    
+</html>
